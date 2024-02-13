@@ -1,0 +1,197 @@
+:root {
+  --primary: blue;
+  --shadow: -5px 5px 10px 5px grey;
+}
+body {
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  background: olivedrab;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/* global message */
+.global {
+  background: orange;
+  font-size: 20px;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+.global > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header */
+header {
+  background: blue;
+  color: white;
+  padding: 10px 0;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: white;
+  color: blue;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > div {
+  border: 3px dotted blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 23px;
+}
+
+header ul li {
+  margin-left: 16px;
+}
+header ul li:hover {
+  background: red;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+/* hero */
+.hero {
+  background: url(https://media.istockphoto.com/id/1398574715/photo/colourful-sunset-wharariki-beach-new-zealand.jpg?s=612x612&w=is&k=20&c=PA7AzoeiQZoiAgTn6tF2RIWpgWqJQpHPd2UDDPlSKiI=);
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  background: rgba(0, 0, 0, 0.226);
+  color: white;
+  width: 400px;
+  padding: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-content hr {
+  width: 100%;
+}
+
+/* latest post */
+.main {
+  display: flex;
+  gap: 16px;
+}
+.articles {
+  width: 66%;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: -5px 5px 10px 5px grey;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+article .art-img {
+  width: 350px;
+}
+article .title {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+article .btn {
+  float: right;
+}
+
+.side-links {
+  width: 34%;
+}
+.country {
+  background: yellowgreen;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+.date {
+  background: yellow;
+  padding: 16px;
+  border-radius: 10px;
+}
+/* recommendation */
+.recc {
+  background: green;
+  padding: 32px 0;
+  margin-top: 32px;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card {
+  width: 350px;
+  box-shadow: var(--shadow);
+  background: white;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.card img {
+  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .btn {
+  width: 100%;
+}
+
+/* subscription */
+.subs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+.subs input {
+  line-height: 42px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+/* footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 64px;
+  text-align: center;
+  margin-top: 32px;
+}
